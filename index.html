@@ -3,26 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página con Canva</title>
+    <title>Formulario de Contacto</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             background-image: url('https://github.com/T020/mi-pagina/blob/main/Tauro3.png?raw=true');
-            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             color: white;
             text-align: center;
             padding: 20px;
-            height: 100vh; /* Asegura que la página ocupe toda la altura de la ventana */
-            overflow: hidden; /* Evita desplazamiento si la imagen se estira demasiado */
+        }
+
+        form {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 50px;
+        }
+
+        input, select, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <!-- Los textos han sido eliminados -->
+    <h1>Formulario de Contacto</h1>
+    <form action="https://formspree.io/f/mqaeakqr" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br>
+
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required><br>
+
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required><br>
+
+        <label for="genero">Género:</label><br>
+        <select id="genero" name="genero" required>
+            <option value="">Selecciona una opción</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br>
+
+        <label for="fecha">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha" required><br>
+
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
+
 
 

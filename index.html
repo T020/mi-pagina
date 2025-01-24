@@ -43,6 +43,40 @@
         button:hover {
             background-color: #45a049;
         }
+
+        .social-buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn .icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .instagram {
+            background-color: #E1306C;
+        }
+
+        .threads {
+            background-color: #000;
+        }
     </style>
 </head>
 <body>
@@ -70,6 +104,15 @@
 
         <button type="submit">Enviar</button>
     </form>
+
+    <div class="social-buttons">
+        <a href="https://www.instagram.com/tomastoro_?igsh=amR0OHp5emw4ZTZ6&utm_source=qr" target="_blank" class="btn instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="icon">
+        </a>
+        <a href="https://www.threads.net/@tomastoro_?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="btn threads">
+            <img src="https://cdn-icons-png.flaticon.com/512/1051/1051373.png" alt="Threads" class="icon">
+        </a>
+    </div>
 </body>
 </html>
 
